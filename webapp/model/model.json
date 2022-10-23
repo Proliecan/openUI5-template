@@ -1,0 +1,9 @@
+{
+    "dummy-entry": {
+        "name": "dummy-entry",
+        "type": "dummy",
+        "elements":[
+            "d", "u", "m", "m", "y"
+        ]
+    }
+}

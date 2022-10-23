@@ -1,0 +1,36 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" 
+		  xmlns:core="sap.ui.core" displayBlock="true"
+controllerName="proliecan.PROJECT-NAME.controller.App">
+    <App id="app" initialPage="page1">
+        <pages>
+            <Page 	id="page1"
+					title="Simple OpenUI5 Template">
+                <content>
+				<Panel 	>
+                        <content>
+							<core:HTML content="{/text/readme}"></core:HTML>
+                        </content>
+                    </Panel>
+					<Panel 	headerText="Setup" 
+							expandable="true" expanded="false">
+                        <content>
+							<core:HTML content="{/text/setup}"></core:HTML>
+                        </content>
+                    </Panel>
+                    <Panel 	headerText="Usage" 
+							expandable="true" expanded="false">
+                        <content>
+							<core:HTML content="{/text/usage}"></core:HTML>
+                        </content>
+                    </Panel>
+					<Panel 	headerText="License" 
+							expandable="true" expanded="false">
+                        <content>
+							<core:HTML content="{/text/license}"></core:HTML>
+                        </content>
+                    </Panel>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
