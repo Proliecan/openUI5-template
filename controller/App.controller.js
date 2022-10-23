@@ -1,7 +1,8 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel"
-], function (Controller, JSONModel) {
+    "sap/ui/model/json/JSONModel",
+    "sap/m/MessageBox"
+], function (Controller, JSONModel, MessageBox) {
     "use strict";
     return Controller.extend("proliecan.PROJECT-NAME.controller.App", {
         onInit: function () {
@@ -33,6 +34,10 @@ sap.ui.define([
             let oConverter = new showdown.Converter();
             let oHtml = oConverter.makeHtml(oReadmeText);
             return oHtml;
+        },
+
+        onOpenUI5Press: function () {
+            MessageBox.information("This template uses the OpenUI5 library.\nFor more information, see the OpenUI5 on Github:\nhttps://github.com/SAP/openui5");
         }
 
     });

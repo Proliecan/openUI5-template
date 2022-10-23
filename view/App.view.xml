@@ -30,6 +30,14 @@ controllerName="proliecan.PROJECT-NAME.controller.App">
                         </content>
                     </Panel>
                 </content>
+                <footer>
+                    <Bar>
+                        <contentRight>
+                            <Button text="OpenUI5"
+                                    press="onOpenUI5Press" />
+                        </contentRight>
+                    </Bar>
+                </footer>
             </Page>
         </pages>
     </App>
